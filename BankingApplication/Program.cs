@@ -15,7 +15,7 @@ namespace BankingApplication {
             int1.Debug();
            
             
-            var chk1 = new Account();
+            var chk1 = new Checking();
             chk1.Deposit(100);
             chk1.Withdraw(75);
             chk1.Deposit(-10);
@@ -23,21 +23,21 @@ namespace BankingApplication {
             chk1.Deposit(0);
             chk1.Withdraw(100);
         
-            var chk2 = new Account();
+            var chk2 = new Checking();
             chk2.Deposit(200);
             chk1.Withdraw(40);
 
-            chk1.Debug();
-            chk2.Debug();
+           //  chk1.Debug();
+            // chk2.Debug();
 
             chk2.Transfer(100, chk1);
 
-            chk1.Debug();
-            chk2.Debug();
+           // chk1.Debug();
+          //  chk2.Debug();
 
             var accounts = new List<Account>();
-                accounts.Add(chk1);
-                accounts.Add(chk2);
+              //accounts.Add(chk1);
+              //accounts.Add(chk2);
                 accounts.Add(sav1);
                 accounts.Add(int1);
 
